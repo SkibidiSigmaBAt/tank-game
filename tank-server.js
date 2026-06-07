@@ -281,7 +281,7 @@ function generateRoomCode() {
   return Math.random().toString(36).substring(2, 8).toUpperCase();
 }
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5432;
 server.listen(PORT, () => {
   console.log(`Tank Survival Server running on port ${PORT}`);
   console.log(`WebSocket endpoint: ws://localhost:${PORT}`);
